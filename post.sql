@@ -33,26 +33,14 @@ ALTER TABLE post
     ADD titulo VARCHAR(50);
 
 --agregar titulos a las publicaciones
-UPDATE
-    post
-SET
-    titulo = 'Ingenio para regalar'
-WHERE
-    id = 1;
+UPDATE post SET titulo = 'Ingenio para regalar'
+WHERE id = 1;
 
-UPDATE
-    post
-SET
-    titulo = 'Catálogo de regalos'
-WHERE
-    id = 2;
+UPDATE post SET titulo = 'Catálogo de regalos'
+WHERE id = 2;
 
-UPDATE
-    post
-SET
-    titulo = 'Las mejores opciones de vino'
-WHERE
-    id = 3;
+UPDATE post SET titulo = 'Las mejores opciones de vino'
+WHERE id = 3;
 
 --insertar dos post para el usuario Pedro
 INSERT INTO post (id, usuario, creacion, contenido, descripcion, titulo)
